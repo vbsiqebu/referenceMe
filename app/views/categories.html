@@ -1,1 +1,11 @@
-<p>This is the categories view.</p>
+<div class:"linkPost" data-ng-repeat="fields in hipchatLinks | filter: {tag:selection}">
+<a href="{{fields.url}}">{{fields.url}}</a>
+<br>
+<p>{{fields.comment}}</p>
+<form name="input" action="hipchatLinks.json" method="get">
+Comment: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+
+</div>
+
