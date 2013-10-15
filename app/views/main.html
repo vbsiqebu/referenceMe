@@ -1,3 +1,5 @@
 <div ng-repeat="tag in tags">
-	<button ng-click="clickLink(tag)">{{tag}}</button>
+	<a href="#/categories/{{tag}}">
+		<button ng-click="clickLink(tag)">{{tag}}</button>
+	</a>
 </div>

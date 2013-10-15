@@ -6,8 +6,8 @@ angular.module('referenceMeApp')
   	$scope.hipchatLinks = hipchatLinks;
   	$rootScope.tags = ["Javascript", "HTML", "CSS", "Ruby"];
 
-  	$scope.clickLink = function(tag) {
-  		$location.path("/categories"); 
-   		$rootScope.selection = tag;
-  }
+  // 	$scope.clickLink = function(tag) {
+  // 		$location.path("/categories"); 
+  //  		$rootScope.selection = tag;
+  // }
   });

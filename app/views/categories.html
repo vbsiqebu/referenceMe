@@ -1,11 +1,16 @@
-<div class:"linkPost" data-ng-repeat="fields in hipchatLinks | filter: {tag:selection}">
-<a href="{{fields.url}}">{{fields.url}}</a>
+<h1>{{selectedTagThroughRoute}}</h1>
+
+<div class:"linkPost" data-ng-repeat="fields in hipchatLinks | filter: {tag:selectedTagThroughRoute}">
+	<a href="{{fields.url}}">{{fields.url}}</a>
+
 <br>
-<p>{{fields.comment}}</p>
-<form name="input" action="hipchatLinks.json" method="get">
-Comment: <input type="text" name="user">
-<input type="submit" value="Submit">
-</form>
+		<p>Date submitted: {{fields.date}}</p>
+		<p>{{fields.comment}}</p>
+
+	<form>
+		Comment: <input type="text">
+		<input type="Submit" value="Submit">
+	</form>
 
 </div>
 

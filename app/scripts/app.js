@@ -7,7 +7,11 @@ angular.module('referenceMeApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/categories', {
+      // .when('/categories', {
+      //   templateUrl: 'views/categories.html',
+      //   controller: 'CategoriesCtrl'
+      // })
+      .when('/categories/:selectedTagInUrl', {
         templateUrl: 'views/categories.html',
         controller: 'CategoriesCtrl'
       })
